@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT - DOM & EVENTS</title>
+    
+    <style>
+        input[type=radio],input[type=checkbox]{
+            accent-color:red;
+        }
+        input[type=text]:focus{
+            border:2px solid blue;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <input type="text" placeholder="Username" required id="user">
+   <br>
+    <input type="email" placeholder="email" required id="emailid">
+    <br>
+    <input type="text" placeholder="contact no" required id="cno">
+    <br>
+    <textarea id="addr"></textarea>
+    <br>
+    <input type="submit" id="btn">
+    <input type="reset" id="btnreset">
+</form>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Customer name</th>
+        <th>email</th>
+        <th>contact no</th>
+        <th>Address</th>
+    </tr>
+</thead>
+    <tbody id="tbody">
+       
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>

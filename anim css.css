@@ -1,0 +1,45 @@
+.box{
+    width:200px;
+    height:200px;
+    background-color: palevioletred;
+    animation-name:movingbox;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    
+}
+@keyframes movingbox{
+    /* from{
+    background-color: blueviolet;
+    }
+    to{
+    background-color: chartreuse;
+    } */
+    0%{
+        margin-left:0;
+        margin-top:0;
+        transform: none;
+    }
+    25%{
+        margin-left:500px;
+        margin-top:0;
+        transform: rotate(360deg);
+        background-color: palevioletred;
+    }
+    50%{
+        margin-left:500px;
+        margin-top:200px;
+        border-radius:50%;
+        background-color: blue;
+
+    }
+    75%{
+        margin-top:200px;
+        margin-left:0;
+        background-color: palevioletred;
+    }
+    100%{
+        margin-left:0;
+        transform: perspective(500px) rotatey(45deg);
+       
+    }
+}
